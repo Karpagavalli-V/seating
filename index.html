@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Seating Management System</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        h2 { color: #444; }
+        input, select, button { padding: 8px; margin: 5px 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+<h2>Exam Seating Management System</h2>
+
+<label>Student Name:</label><br>
+<input type="text" id="studentName" placeholder="Enter student name"><br>
+
+<label>Select Room:</label><br>
+<select id="roomSelect">
+    <option value="Room 101">Room 101</option>
+    <option value="Room 102">Room 102</option>
+    <option value="Room 103">Room 103</option>
+</select><br>
+
+<label>Seat Number:</label><br>
+<input type="number" id="seatNumber" min="1" placeholder="Enter seat number"><br>
+
+<button onclick="assignSeat()">Assign Seat</button>
+
+<h3>Seating Arrangement</h3>
+<table id="seatingTable">
+    <tr>
+        <th>Student Name</th>
+        <th>Room</th>
+        <th>Seat Number</th>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
